@@ -23,12 +23,24 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{pageTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>Antonio's Digital Playground: Diving into Software</p>
+      <section className={'text-large text-gray-500 lg:text-xl sm:px-16 text-center'}>
+        <p>A Developer's Diary: Chronicles of a Coding Journey</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
+        <h2 className={'text-xl font-bold'}>Posts</h2>
+        <ul role="list" className="divide-y divide-gray-200">
+          {allPostsData.map(({ id, date, title, excerpt }) => (
+            <li key={id} className='py-4'>
+              <Link href={`/posts/${id}`}>{title}</Link>
+              <br />
+              <small className={utilStyles.lightText}>
+                <Date dateString={date} />
+              </small>
+              <p>{excerpt}</p>
+            </li>
+          ))}
+        </ul>
+        {/* <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title, excerpt }) => (
             <li className={utilStyles.listItem} key={id}>
             <Link href={`/posts/${id}`}>{title}</Link>
@@ -36,9 +48,10 @@ export default function Home({ allPostsData }) {
             <small className={utilStyles.lightText}>
               <Date dateString={date} />
             </small>
+            <p>{excerpt}</p>
           </li>
           ))}
-        </ul>
+        </ul> */}
       </section>
     </Layout>
   );
