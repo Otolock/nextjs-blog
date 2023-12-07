@@ -1,6 +1,7 @@
 ---
 title: 'Escaping the Tutorial Loop: Learning Through Projects'
 date: '2023-12-06'
+excerpt: Overcome the "tutorial loop" in coding with practical strategies for applying tutorial knowledge to build real-world projects.
 ---
 
 When learning to code, it's easy to find yourself in the "tutorial loop," where you're stuck in a loop of following tutorials without applying the knowledge to build something independently. This trap can lead to the false belief that you're not ready to venture out on your own, especially if there isn't a tutorial for what you want to build.

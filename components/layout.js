@@ -5,24 +5,21 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
 const name = 'Antonio Santos';
-export const siteTitle = 'Antonio Santos | Software Developer';
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, pageTitle, pageDescription }) {
   return (
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content={pageDescription}
         />
         <meta
           property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle,
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+          content={`${process.env.NEXT_PUBLIC_BASE_URL}/api/og?title=${pageTitle}`}
         />
-        <meta name="og:title" content={siteTitle} />
+        <meta name="og:title" content={pageTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>

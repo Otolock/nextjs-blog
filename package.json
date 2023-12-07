@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@vercel/og": "^0.5.20",
     "date-fns": "^2.30.0",
     "gray-matter": "^4.0.3",
     "next": "latest",

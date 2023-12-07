@@ -21,10 +21,12 @@ export async function getStaticPaths() {
     };
 }
 
-
 export default function Post({ postData }) {
+    const pageTitle = postData.title;
+    const pageDescription = postData.excerpt;
+
     return (
-        <Layout>
+        <Layout pageTitle={pageTitle} pageDescription={pageDescription}>
             <Head>
                 <title>{postData.title}</title>
             </Head>
