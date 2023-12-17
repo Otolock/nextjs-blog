@@ -2,7 +2,6 @@ import Layout from "../../components/layout";
 import Head from "next/head";
 import Date from "../../components/date";
 import { getAllPostIds, getPostData } from "../../lib/posts";
-import utilStyles from '../../styles/utils.module.css';
 
 export async function getStaticProps({ params }) {
     const postData = await getPostData(params.id);
@@ -31,12 +30,12 @@ export default function Post({ postData }) {
                 <title>{postData.title}</title>
             </Head>
             <article className="bg-white">
-                <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+                <div className="text-base leading-7 text-gray-700">
                     <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{postData.title}</h1>
                     <div className={`text-gray-500 mt-2`}>
                         <Date dateString={postData.date} />
                     </div>
-                    <div className="mt-6 prose-lg" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+                    <div className="mt-6 prose max-w-none" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
                 </div>
             </article>
         </Layout>
