@@ -63,7 +63,7 @@ export default function Layout({ children, home, pageTitle, pageDescription }) {
           <main>{children}</main>
           {!home && (
             <div className='py-8'>
-              <Link href="/">← Back to home</Link>
+              <Link href="/" className='text-sky-500 hover:text-sky-600'>← Back to home</Link>
             </div>
           )}
         </div>
