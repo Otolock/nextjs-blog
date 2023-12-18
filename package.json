@@ -6,13 +6,22 @@
     "start": "next start"
   },
   "dependencies": {
-    "@vercel/og": "^0.5.20",
+    "@headlessui/react": "^1.7.17",
+    "@mapbox/rehype-prism": "^0.9.0",
+    "@mdx-js/loader": "^3.0.0",
+    "@mdx-js/react": "^3.0.0",
+    "@next/mdx": "^14.0.4",
+    "@vercel/og": "^0.6.1",
+    "clsx": "^2.0.0",
     "date-fns": "^2.30.0",
+    "fast-glob": "^3.3.2",
     "gray-matter": "^4.0.3",
-    "next": "latest",
+    "next": "^14.0.4",
+    "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "remark": "^15.0.1",
+    "remark-gfm": "^4.0.0",
     "remark-html": "^16.0.1"
   },
   "engines": {
