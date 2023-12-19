@@ -1,6 +1,6 @@
-import '../styles/tailwind.css';
-import { Layout } from '../components/Layout';
-import { Providers } from './providers';
+import '@/styles/tailwind.css';
+import { Layout } from '@/components/Layout';
+import { Providers } from '@/app/providers';
 
 export default function RootLayout({
   // Layouts must accept a children prop.

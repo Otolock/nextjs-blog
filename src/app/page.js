@@ -3,10 +3,10 @@ import Link from "next/link"
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
-import { GitHubIcon } from '@/components/SocialIcons'
+import { GitHubIcon, ThreadsIcon } from '@/components/SocialIcons'
 
-import { getAllArticles } from '../lib/articles'
-import { formatDate } from '../lib/formatDate'
+import { getAllArticles } from '@/lib/articles'
+import { formatDate } from '@/lib/formatDate'
 
 export const metadata = {
   title: 'Antonio Santos | Software Developer & Aspiring Founder',
@@ -106,6 +106,11 @@ export default async function Home() {
               href="https://github.com/otolock"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
+            />
+            <SocialLink
+              href="https://threads.net/otolock"
+              aria-label="Follow on Threads"
+              icon={ThreadsIcon}
             />
           </div>
         </div>
