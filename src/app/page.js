@@ -107,6 +107,11 @@ export default async function Home() {
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
+            <SocialLink
+              href="https://threads.net/otolock"
+              aria-label="Follow on Threads"
+              icon={ThreadsIcon}
+            />
           </div>
         </div>
       </Container>
