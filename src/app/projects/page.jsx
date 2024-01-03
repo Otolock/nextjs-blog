@@ -25,9 +25,10 @@ function LinkIcon(props) {
     </svg>
   );
 }
+const title = 'Projects';
 
 export const metadata = {
-  title: 'Projects',
+  title: title,
   description:
     'A showcase of my passion projects and contributions in software development, reflecting my journey as a developer and aspiring founder.',
   openGraph: {

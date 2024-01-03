@@ -8,8 +8,10 @@ import { GitHubIcon, ThreadsIcon } from '@/components/SocialIcons';
 import { getAllArticles } from '@/lib/articles';
 import { formatDate } from '@/lib/formatDate';
 
+const title = 'Antonio Santos | Software Developer & Aspiring Founder';
+
 export const metadata = {
-  title: 'Antonio Santos | Software Developer & Aspiring Founder',
+  title: title,
   description:
     'Embark on a journey with Antonio Santos, a software developer and aspiring tech entrepreneur. Discover a mix of in-depth articles on software design, startup insights, and the adventures of building in the tech world.',
   openGraph: {

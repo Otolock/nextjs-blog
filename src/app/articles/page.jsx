@@ -32,8 +32,10 @@ function Article({ article }) {
   );
 }
 
+const title = 'Articles';
+
 export const metadata = {
-  title: 'Articles',
+  title: title,
   description:
     'Delve into a curated collection of articles on software development, entrepreneurial insights, and the journey of an aspiring tech founder. Discover a blend of technical expertise and startup wisdom.',
   openGraph: {

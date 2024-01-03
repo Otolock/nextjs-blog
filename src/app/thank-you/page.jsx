@@ -1,7 +1,9 @@
 import { SimpleLayout } from '@/components/SimpleLayout';
 
+const title = "You're subscribed";
+
 export const metadata = {
-  title: 'You’re subscribed',
+  title: title,
   description: 'Thanks for subscribing to my newsletter.',
   openGraph: {
     images: [
