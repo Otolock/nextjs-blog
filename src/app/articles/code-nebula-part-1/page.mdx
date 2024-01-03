@@ -1,0 +1,60 @@
+import { ArticleLayout } from '@/components/ArticleLayout';
+import ImageWrapper from '@/components/ImageWrapper';
+import codeNebulaLogo from './code_nebula_logo.png';
+
+export const article = {
+  author: 'Antonio Santos',
+  date: '2024-01-02',
+  title: 'Code Nebula - A Vast, Creative Space for Learning to Code',
+  description:
+    'Overcome the "tutorial loop" in coding with practical strategies for applying tutorial knowledge to build real-world projects.',
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+  openGraph: {
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/og?title=${article.title}`,
+      },
+    ],
+  },
+};
+
+export default (props) => <ArticleLayout article={article} {...props} />;
+
+For the month of January 2024, I am participating in the first [unofficial Threads Buildathon](https://www.threads.net/@andrewdddo/post/C1L2-LBRBxR/). In it, participants are encouraged to build something in public, and share weekly progress updates with a video demo to be shared at the end of the month.
+
+## My Dream
+
+For my project, I’m going to be working on Code Nebula - A Vast, Creative Space for Learning to Code
+
+<ImageWrapper
+  src={codeNebulaLogo}
+  alt='Image of the code nebula logo with a space-themed background'
+/>
+
+My dream for Code Nebula is to build a community driven, online learning platform dedicated to teaching coding and programming skills. It’s designed for learners of all levels, from beginners to more advanced coders, offering a unique journey through various programming languages and concepts.
+
+Each lesson will be structured into digestible sections, with progress tracked in real-time, providing learners with a sense of accomplishment and direction.
+
+## Behind the Scenes
+
+I have never built something like Code Nebula before, but the projects I’ve been working on over the past two months have slowly led up to this without me knowing.
+
+In the past two months, I’ve built [CodeCapture](http://codecapture.app), which allows you to generate images of code snippets for use in social media or wherever you might have a use case for them. In building this project, I learned about implementing code editors and managing syntax highlighting. These lessons learned will translate nicely to the building the infrastructure for Code Nebula.
+
+I’ve also worked on this website, having migrated it from the NextJS Pages Router to the new App Router. I also switched from using markdown files to MDX files, which is what I will be using to manage the content for each lesson.
+
+For session management I’ll be using iron-session. After playing around with Auth0 and passport.js, I’ve found iron-session to be the easiest to work with.
+
+Finally, for database management, I’m still considering whether to use MongoDB or PostgreSQL. I’m familiar with both, and I am weighing the pros and cons of each option before deciding which one to use.
+
+## Progress so far
+
+So far, I’ve made a little bit of progress with Code Nebula. I’ve built a simple landing page and started a draft of the first lesson. The plan for the rest of this week is to complete this first lesson. A stretch goal would be to get started with user management and progress tracking, but I am planning to leave that for next week.
+
+## Conclusion
+
+As January begins and I embark on the unofficial Threads Buildathon, the journey with Code Nebula is filled with promise and excitement. The concept of creating a comprehensive, community-driven online platform for coding education is both challenging and exhilarating.
